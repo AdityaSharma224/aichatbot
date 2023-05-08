@@ -1,4 +1,5 @@
 {
+  "homepage": "https://AdityaSharma224.github.io/aichatbot",
   "name": "aibot",
   "version": "0.1.0",
   "type": "module",
@@ -21,7 +22,7 @@
     "deploy": "gh-pages -d build",
     "start:frontend": "react-scripts start",
     "start:backend": "nodemon server.cjs",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
