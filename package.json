@@ -1,7 +1,6 @@
 {
   "name": "aibot",
   "version": "0.1.0",
-  "homepage": "https://AdityaSharma224.github.io/aichatbot",
   "type": "module",
   "private": true,
   "dependencies": {
@@ -18,8 +17,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start:frontend": "react-scripts start",
     "start:backend": "nodemon server.cjs",
     "build": "react-scripts build",
