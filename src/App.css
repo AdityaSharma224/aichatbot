@@ -1,38 +1,124 @@
-.App {
+.app {
+  background-color: #343541;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #202123;
+  height: 100vh;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history{
+  padding: 10px;
+  margin:10px;
+  height:100%;
+}
+
+.history li{
+  list-style-type: none;
+  padding:15px 0;
+  cursor: pointer;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info{
+  color:rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  padding: 10px;
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.bottom-section{
+  width: 100%;
+  display:flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container{
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+input{
+  width:100%;
+  border:none;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.05) 0 54px 55px,
+  rgba(0,0,0,0.05) 0 -12px 30px,
+  rgba(0,0,0,0.05) 0 4px 6px,
+  rgba(0,0,0,0.05) 0 12px 3px,
+  rgba(0,0,0,0.05) 0 -3px 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus{
+  outline: none;
 }
+
+#submit{
+  position:absolute;
+  bottom:15px;
+  right:0;
+  cursor: pointer;
+  align-items: right;
+
+}
+
+button {
+  border: solid 0.7px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin:10px;
+  text-align: left;
+  cursor:pointer;
+}
+
+
+nav{
+  border-top:solid 0.7px rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin:10px;
+}
+
+.feed{
+  overflow-x: hidden;
+  width:100%;
+  padding:0;
+}
+
+.feed li{
+  display:flex;
+  background-color: #444654;
+  width:100%;
+  padding:20px;
+  margin: 20px 0;
+}
+
+.feed p{
+  color:rgba(255,255,255,0.8);
+  font-size: 14px;
+  text-align: left;
+}
+
+.feed p.role{
+  min-width: 100px;
+}
+
+
