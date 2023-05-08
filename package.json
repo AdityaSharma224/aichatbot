@@ -1,6 +1,7 @@
 {
   "name": "aibot",
   "version": "0.1.0",
+  "homepage": "https://AdityaSharma224.github.io/EddyBot",
   "type": "module",
   "private": true,
   "dependencies": {
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start:frontend": "react-scripts start",
     "start:backend": "nodemon server.cjs",
     "build": "react-scripts build",
@@ -44,6 +47,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "cors": "^2.8.5",
+    "gh-pages": "^5.0.0",
     "nodemon": "^2.0.22"
   }
 }
